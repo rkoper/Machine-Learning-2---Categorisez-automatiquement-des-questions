@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.contact {
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    min-width: 200px;
+    min-height: 150px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+<div class="contact" style="background-color: #3b5999;">
+  <p><font size="6" style="color: white" face="Optima, sans-serif">Stack Overflow</p>
+      <p><font size="5" style="color: white" face="Optima, sans-serif">Tag prediction</p>
+
+</div>
+
+<div class="contact" style="background-color: #3b5999" >
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <div class="form-actions">
+      <button type="submit">Send</button>
+    </div>
+</form>
+</div>
+
+
+<div class="contact" style="background-color: #3b5999;">
+    <p> {{ posts_1 }}</p>
+    <p> {{ posts_2 }}</p>
+    <p> {{ posts_3 }}</p>
+</div>
+
+
+<div class="contact" style="background-color: #3b5999;">
+</div>
+
+<div class="contact" style="background-color: #3b5999;">
+  <p><font size="2" style="color: white" face="Optima, sans-serif">© Sofiane Mouhab 2021</p>
+</div>
+
+</body>
+</html>
